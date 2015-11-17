@@ -1,0 +1,13 @@
+root@kali:~/Desktop/5ss/ssos/lexandyacc# lex 3a.l 
+root@kali:~/Desktop/5ss/ssos/lexandyacc# cc lex.yy.c 
+/tmp/ccAdAevR.o: In function `yylex':
+lex.yy.c:(.text+0x407): undefined reference to `yywrap'
+/tmp/ccAdAevR.o: In function `input':
+lex.yy.c:(.text+0xf44): undefined reference to `yywrap'
+collect2: error: ld returned 1 exit status
+root@kali:~/Desktop/5ss/ssos/lexandyacc# cc lex.yy.c -ll
+root@kali:~/Desktop/5ss/ssos/lexandyacc# ./a.out 
+^Z
+[1]+  Stopped                 ./a.out
+root@kali:~/Desktop/5ss/ssos/lexandyacc# ./a.out democ.c 
+

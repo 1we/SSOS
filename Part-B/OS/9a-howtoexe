@@ -1,0 +1,7 @@
+step1:check permissions(chmod)
+step2:cat>somfile,file2
+step3:ls
+step4:sh 9a.sh somfile file2>new9.sh
+step5:rm somfile and file2
+step6:sh new9.sh
+step7:boom all done
